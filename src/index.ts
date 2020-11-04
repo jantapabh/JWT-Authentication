@@ -4,10 +4,11 @@ import express from 'express'
 import mongoose from 'mongoose'
 import passport from 'passport'
 import cookieParser from 'cookie-parser'
-
 import createServer from './createServer'
 import { PassportFB, PassportGoogle } from './passport'
 import { FBAuthenticate, GoogleAuthenticate } from './passport/socialMediaAuth'
+
+//mongodb+srv://admin_auth:<password>@typescript.76gi7.mongodb.net/<dbname>?retryWrites=true&w=majority
 
 const {
   PORT,

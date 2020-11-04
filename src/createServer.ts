@@ -6,6 +6,8 @@ import { verifyToken, createToken, sendToken } from './utils/tokenHandler'
 import { AppContext } from './types'
 import { UserModel } from './entities/User'
 
+// function สำหรับสรร้าง apollo server
+
 export default async () => {
   const schema = await buildSchema({
     resolvers: [AuthResolvers],
